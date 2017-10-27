@@ -19,4 +19,5 @@ from carros import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.vista, name='home.html'),
+    url(r'^lista/$', views.car_list, name='car_list'),
 ]
