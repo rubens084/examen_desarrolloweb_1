@@ -64,10 +64,17 @@
 
         <div class="row">
 
+        {%for car in object_list%}
+
           <div class="card">
             <img data-src="holder.js/100px280/thumb" alt="Card image cap">
-            <p class="card-text">{{object.make}}</p>
+            <p class="card-text">{{car.make}}</p>
+            <p class="card-text">{{car.Type}}</p>
+
+
           </div>
+
+        {%endfor%}
 
         </div>
 
